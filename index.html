@@ -22,14 +22,14 @@
 </head>
 
 <body class="bg-black">
-    <!--HeadNav -->
+    <!--Navbar -->
     <nav class="navbar navbar-light navbar-top navbar-expand-md bg-dark-success-1 justify-content-center">
         <div class="container">
             <a href="/" class="navbar-brand d-flex w-50 me-auto align-items-center">
                 <div class="logo-div-responsive">
                     <img class="w-100" src="./assets/img/viajes.svg" alt="Icono Viajes Chile">
                 </div>
-                <span class="fs-5 text-light d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                <span class="fs-5 text-light d-none d-sm-none d-md-block d-lg-block">
                     Viajes Chile
                 </span>
                 <span class="fs-3 text-light">
@@ -82,15 +82,13 @@
             </button>
         </div>
     </header>
-    <!--EndHeadNav -->
-
-    <!--Container -->
+   
     <main data-bs-spy="scroll" data-bs-target="#ul-nav" data-bs-offset="0" tabindex="0"
         class="container-fluid text-light">
         <section id="quienes_somos" class="m-4 d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
             <div class="row gy-3 gx-5">
                 <div class="col-md-12">
-                    <h1 class="diplay-1">¿QUIENES SOMOS?</h1>
+                    <h1 class="quienes">¿QUIENES SOMOS?</h1>
                 </div>
                 <div class="col-md-12">
                     <hr class="border-dark-success-1">
@@ -158,7 +156,7 @@
         <section id="destacados" class="m-4 pt-3">
             <div class="row gy-3 gx-5">
                 <div class="col-md-12">
-                    <h1 class="diplay-1">DESTACADOS</h1>
+                    <h1>DESTACADOS</h1>
                 </div>
                 <div class="col-md-12">
                     <hr class="border-dark-success-1">
@@ -228,7 +226,7 @@
         <section id="contacto" class="m-4 pt-3">
             <div class="row gy-3 gx-5">
                 <div class="col-md-12">
-                    <h1 class="diplay-1">CONTACTO</h1>
+                    <h1>CONTACTO</h1>
                 </div>
                 <div class="col-md-12">
                     <hr class="border-dark-success-1">
@@ -248,9 +246,9 @@
                             <textarea class="form-control" id="txt_mensaje" rows="6"></textarea>
                         </div>
                         <div class="col-12 col-sm-12 col-md-3">
-                            <button id="btn-contactar" name="btn-contactar"
+                            <button id="btn-enviar" name="btn-enviar"
                                 class="btn btn-primary bg-dark-success-1 mt-3 " type="submit">
-                                Contactar
+                               Enviar
                             </button>
                         </div>
                     </div>
@@ -265,7 +263,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
                 <span class="fs-5 text-light">
-                    Viajes Chile
+                    VIAJES CHILE
                 </span>
             </div>
             <div class="col-12 col-md-6">
@@ -290,12 +288,31 @@
       //$(document).ready(function(){});
 
       $(document).ready(function(){
-          
-        $(document).ready(function () {
-      $("#btn-contactar").click(function () {
-        alert("El correo fue enviado correctamente.");
+            
+            $(document).ready(function () {
+          $(".quienes").click(function () {
+            alert("La mejor agencia de Chile");
+        });
     });
-});
+  });
+
+
+  $(document).ready(function(){
+            
+            $(document).ready(function () {
+          $(".quienes").click(function () {
+            alert("La mejor agencia de Chile");
+        });
+    });
+  });
+
+        $(document).ready(function(){
+            
+          $(document).ready(function () {
+        $("#btn-enviar").click(function () {
+          alert("El correo fue enviado correctamente.");
+      });
+  });
 
           //fin de document ready
       });
